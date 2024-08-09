@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Shopify</title>
+</head>
+<body>
+    <nav class="h-24 bg-black flex w-full">
+
+        <div class="flex w-full gap-6 px-12 md:flex w-full gap-6 mt-2 px-12">  <!-- main div start -->
+            
+            <div class="size-36 mt-7 mr-5 items-center md:size-36 mt-5 mr-5 items-center">
+              <img src="./shopilogo.png" alt="lOGO"> 
+            </div>
+            
+          <div class="flex justify-between w-full">
+            <div class="hidden lg:flex gap-4 ">
+              <!-- left 4 buttons -->
+                <div class="hover:underline flex gap-2  items-center text-white">
+                  <button>Solutions</button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="size-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                  
+                </div>
+
+                <div class="hover:underline flex items-center text-white">
+                  <button>Pricing</button>
+                </div>
+
+                <div class="hover:underline flex items-center text-white gap-2">
+                  <button>Resources</button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="size-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </div>
+
+                <div class="hover:underline flex gap-2 items-center text-white">
+                  <button class="flex">What's new</button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="size-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </div>
+
+            </div>
+
+                <div class="hidden lg:flex items-center gap-2">
+                  <!-- for right 2 buttons -->
+                  <div class="text-white mr-5">
+                    <button class="hover:underline">Log in</button>
+                  </div>
+                  <!-- start free trial -->
+                  <div class="flex bg-white font-semibold hover:bg-gray-300 rounded-full px-3 py-2">
+                    <button class="">Start free trial</button>
+                  </div>
+
+                </div>
+
+                <div class="flex justify-end w-full lg:hidden">
+                  <div class="flex items-center gap-4">
+                    <!-- small screen -->
+                     <div class="text-white font-semibold ">
+                      <button class="underline">Start free trial</button>
+                     </div>
+                     <div>
+
+                      <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+                     </div>
+                </div>
+                
+                </div>
+
+            
+            
+          </div>
+            
+            
+        </div><!-- main div end -->
+    </nav>
+</body>
+</html>
